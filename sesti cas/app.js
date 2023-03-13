@@ -17,14 +17,32 @@
 
 ////////////////////////////////////zadaci sa stringovima///////////////////////////////////////////
 
-let string = "Mama ima momu";
+// let string = "Mama ima momu";
 
-const numbers = (someString) => {
-  let count = 0;
-  for (let i = 0; i < someString.length; i++) {
-    count++;
+// const numbers = (someString) => {
+//   let count = 0;
+//   for (let i = 0; i < someString.length; i++) {
+//     count++;
+//   }
+//   return count;
+// };
+
+// console.log(numbers(string));
+
+let stringNeki = "Naskjbwadpojrsf aj jadfJHAF KAJSH ADkjdbawd ";
+
+const counter = (string) => {
+  let malaSlova = 0;
+  let velikaSlova = 0;
+
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] !== " ") {
+      if (string[i] === string[i].toUpperCase()) {
+        velikaSlova++;
+      } else malaSlova++;
+    }
   }
-  return count;
+  return `Malih slova ima ${malaSlova}, a velikih ${velikaSlova}`;
 };
 
-console.log(numbers(string));
+console.log(counter(stringNeki));
