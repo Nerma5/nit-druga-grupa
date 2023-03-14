@@ -61,17 +61,43 @@
 
 // console.log(control(nekiString));
 
-let nekiString = "anavolimilovana";
+// let nekiString = "anavolimilovana";
 
-const check = (string) => {
-  let palindrom = 0;
+// const check = (string) => {
+//   let palindrom = "";
+//   for (let i = string.length - 1; i >= 0; i--) {
+//     palindrom += string[i];
+//   }
+//   return palindrom;
+// };
 
-  for (let i = 0; i < string.length; i++) {
-    if (string[i].reverse() < string[i]) {
-      palindrom++;
-    } else "nothing to see";
-  }
-  return palindrom;
-};
+// console.log(check(nekiString));
 
-console.log(check(nekiString));
+// function reversingNames(name1, name2) {
+//     for (let i = name2.length - 1; i >= 0; i--) {
+//       if (name1[i]) console.log(name1[i], i);
+//       console.log(name2[i], i);
+//     }
+//   }
+
+// const objekat = (name, lstname) => {
+//   const obj = {
+//     name,
+//     lstname,
+//   };
+//   return obj;
+// };
+
+// console.log(objekat("nerma", "hot"));
+
+// class Bus {
+//   constructor(seats) {
+//     this.seats = seats;
+//   }
+//   numberOfSeats(arg1) {
+//     this.seats = arg1;
+//   }
+//   getSeats() {
+//     return this.seats;
+//   }
+// }
