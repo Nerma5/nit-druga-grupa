@@ -29,20 +29,34 @@
 
 // console.log(numbers(string));
 
-let stringNeki = "Naskjbwadpojrsf aj jadfJHAF KAJSH ADkjdbawd ";
+// const checkLetter = (string) => {
+//   let malaSlova = 0;
+//   let velikaSlova = 0;
 
-const counter = (string) => {
+//   for (let i = 0; i < string.length; i++) {
+//     if (string[i] !== " ") {
+//       if (string[i] === string[i].toUpperCase()) {
+//         velikaSlova++;
+//       } else malaSlova++;
+//     }
+//   }
+//   return `Velikih slova ima ${velikaSlova}, a malih ${malaSlova}`;
+// };
+
+// console.log(checkLetter(nekiString));
+
+let nekiString = "SJDF kjsbdf kjbJsSAK wjk KAbaes";
+
+const control = (string) => {
   let malaSlova = 0;
   let velikaSlova = 0;
 
   for (let i = 0; i < string.length; i++) {
-    if (string[i] !== " ") {
-      if (string[i] === string[i].toUpperCase()) {
-        velikaSlova++;
-      } else malaSlova++;
-    }
+    if (string[i].toUpperCase() < string[i]) {
+      velikaSlova++;
+    } else malaSlova++;
   }
-  return `Malih slova ima ${malaSlova}, a velikih ${velikaSlova}`;
+  return `velikih slova ima ${velikaSlova}, a malih ${malaSlova}, sto znaci da velikih slova ima vise`;
 };
 
-console.log(counter(stringNeki));
+console.log(control(nekiString));
