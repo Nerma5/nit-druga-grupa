@@ -45,18 +45,33 @@
 
 // console.log(checkLetter(nekiString));
 
-let nekiString = "SJDF kjsbdf kjbJsSAK wjk KAbaes";
+// let nekiString = "SJDF kjsbdf kjbJsSAK wjk KAbaes";
 
-const control = (string) => {
-  let malaSlova = 0;
-  let velikaSlova = 0;
+// const control = (string) => {
+//   let malaSlova = 0;
+//   let velikaSlova = 0;
+
+//   for (let i = 0; i < string.length; i++) {
+//     if (string[i].toUpperCase() < string[i]) {
+//       velikaSlova++;
+//     } else malaSlova++;
+//   }
+//   return `velikih slova ima ${velikaSlova}, a malih ${malaSlova}, sto znaci da velikih slova ima vise`;
+// };
+
+// console.log(control(nekiString));
+
+let nekiString = "anavolimilovana";
+
+const check = (string) => {
+  let palindrom = 0;
 
   for (let i = 0; i < string.length; i++) {
-    if (string[i].toUpperCase() < string[i]) {
-      velikaSlova++;
-    } else malaSlova++;
+    if (string[i].reverse() < string[i]) {
+      palindrom++;
+    } else "nothing to see";
   }
-  return `velikih slova ima ${velikaSlova}, a malih ${malaSlova}, sto znaci da velikih slova ima vise`;
+  return palindrom;
 };
 
-console.log(control(nekiString));
+console.log(check(nekiString));
