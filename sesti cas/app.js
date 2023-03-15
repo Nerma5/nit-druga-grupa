@@ -117,4 +117,34 @@ class Person {
 }
 
 let person1 = new Person("Nemra", 18);
-console.log(person1.getName());
+// console.log(person1.getName());
+
+class House {
+  constructor(address, price, residents) {
+    this.address = address;
+    this.price = price;
+    this.residents = residents;
+  }
+  getAddress() {
+    return this.adress;
+  }
+  getPrice() {
+    return this.price;
+  }
+  getResidents() {
+    return this.residents;
+  }
+  addResident(resident) {
+    this.residents.push(resident);
+  }
+}
+
+let Nerma = new Person("nerma", 18);
+let Fazila = new Person("fazila", 26);
+
+let house = new House("adresa", 234234, [Nerma, Fazila]);
+// console.log(house.getResidents());
+
+let Medina = new Person("medina", 23);
+house.addResident(Medina);
+console.log(house.getResidents());
