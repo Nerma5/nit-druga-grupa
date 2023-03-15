@@ -101,3 +101,20 @@
 //     return this.seats;
 //   }
 // }
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  //setter
+  setName(arg1) {
+    this.name = arg1;
+  }
+  // getter
+  getName() {
+    return this.name;
+  }
+}
+
+let person1 = new Person("Nemra", 18);
+console.log(person1.getName());
