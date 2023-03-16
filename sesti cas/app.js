@@ -147,4 +147,55 @@ let house = new House("adresa", 234234, [Nerma, Fazila]);
 
 let Medina = new Person("medina", 23);
 house.addResident(Medina);
-console.log(house.getResidents());
+// console.log(house.getResidents());
+
+class Auto {
+  oznaka;
+  brzina;
+  constructor(oznaka, brzina) {
+    this.oznaka = oznaka;
+    this.brzina = brzina;
+  }
+  ubrzanje() {
+    return (this.brzina += 20);
+  }
+  uspori() {
+    return (this.brzina -= 10);
+  }
+  ukoci() {
+    return (this.brzina = 0);
+  }
+}
+
+const auto = new Auto("skoda", 120);
+// console.log(auto.ubrzanje());
+// console.log(auto.uspori());
+// console.log(auto.ukoci());
+
+class Bus extends Auto {
+  #sedista = 50;
+  constructor(marka, brzina) {
+    super(marka, brzina);
+  }
+}
+const bus = new Bus("lasta", 120);
+// console.log(bus);
+// console.log(bus.ubrzanje());
+// console.log(bus.uspori());
+// console.log(bus.ukoci());
+
+class Animal {
+  constructor(type, name) {
+    this.type = type;
+    this.name = name;
+  }
+  getType() {
+    return (this.type = type);
+  }
+  getName() {
+    return (this.name = name);
+  }
+}
+
+const animal = new Animal("repthils", "rex");
+console.log(animal);
