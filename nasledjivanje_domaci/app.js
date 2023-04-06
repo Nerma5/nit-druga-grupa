@@ -50,4 +50,12 @@ class Worker extends Person{
         this.position = position
         this.salary = salary
     }
+    position(){
+        return `The worker ${this.getName()} ${this.getLstname()} of age ${this.getAge()} is on ${this.position} position very long`
+    }
+    salary(){
+        return `He gets the highest salary of ${this.salary} in company`
+    }
 }
+
+let radnik = new Worker("Pera", "Peric", 21, "engineer", 2933)
