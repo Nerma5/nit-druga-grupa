@@ -179,7 +179,7 @@ class Bus extends Auto {
   }
 }
 const bus = new Bus("lasta", 120);
-// console.log(bus);
+console.log(bus);
 // console.log(bus.ubrzanje());
 // console.log(bus.uspori());
 // console.log(bus.ukoci());
@@ -198,4 +198,4 @@ class Animal {
 }
 
 const animal = new Animal("repthils", "rex");
-console.log(animal);
+// console.log(animal);
